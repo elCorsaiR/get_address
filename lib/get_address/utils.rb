@@ -8,5 +8,9 @@ module GetAddress
       end
       result.join('&')
     end
+
+    def self.present?(param)
+      param.respond_to?(:empty?) ? !param.empty? : !param.nil?
+    end
   end
 end

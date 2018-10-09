@@ -17,7 +17,7 @@ module GetAddress
 
 
   def self.get_address(postcode, house = '', options = {})
-    path = house == '' ? "find/#{postcode}" : "find/#{postcode}/#{house}"
+    path = Utils.present?(house) ? "find/#{postcode}/#{house}" : "find/#{postcode}"
     query = options[:sort].nil? ? {} : { sort: options[:sort] }
     GetAddress.request :get, path, query
   rescue ResourceNotFoundError => error

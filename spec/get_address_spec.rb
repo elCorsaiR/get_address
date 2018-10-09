@@ -54,6 +54,13 @@ RSpec.describe GetAddress do
           expect(addresses).to_not be_empty
         end
       end
+
+      describe 'when house is nil' do
+        it 'returns a list of addresses for a postcode' do
+          addresses = GetAddress.get_address 'XX2 00X', nil
+          expect(addresses).to_not be_empty
+        end
+      end
     end
 
     describe 'when options is passed' do
