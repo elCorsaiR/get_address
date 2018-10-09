@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.getaddress.io/find/XX2%2000X?api-key=test&format=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (mingw32 i686) ruby/2.2.6p396
+      Host:
+      - api.getAddress.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '377'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Encoding:
+      - gzip
+      Expires:
+      - "-1"
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Mon, 08 Oct 2018 17:01:27 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
+        kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
+        AWz2zkrayZ4hgKrIHz9+fB8/In7xR2XWFu16ln/06P7u+N7Dnb2d+/cO7t3b
+        2XlwsDv6qKyWF/r19s54997ezr37Dx/sfHrw4ODTT/eoQTab1XnT5M1Hj773
+        vY8+vX+QflG003m2SF9V2eyj0Ufyv5O6up5VS/rt9bqu8+uPvj+i1p/uvFfr
+        vfdqvf9erT99r9bvNcoH7zXKB+81ygfvNcoH7zXKB+81yoP3GuXBe43y4L3w
+        PngvvB++F94P3wfvJ6v0dV5fFtM8fd2SmPH3D3ZiIKLvP8vrZVPM8vSLqq3q
+        9KSir9/j9efZ8rzOltP09XReVWX67Wrd5NTkvV/Pp9VyltXXBtAzQuZJdd1Q
+        +9vA+v4v+X8AAUBzh2YEAAA=
+    http_version: 
+  recorded_at: Mon, 08 Oct 2018 17:01:26 GMT
+recorded_with: VCR 2.9.3
